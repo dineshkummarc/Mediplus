@@ -2,10 +2,10 @@
 require_once __DIR__ . '/includes/functions.php';
 
 if (is_logged_in()) {
-    if (current_role() === 'patient') redirect('/medi/patient/dashboard.php');
-    if (current_role() === 'doctor') redirect('/medi/doctor/dashboard.php');
-    if (current_role() === 'nurse') redirect('/medi/nurse/dashboard.php');
-    if (current_role() === 'admin') redirect('/medi/admin/dashboard.php');
+    if (current_role() === 'patient') redirect('/patient/dashboard.php');
+    if (current_role() === 'doctor') redirect('/doctor/dashboard.php');
+    if (current_role() === 'nurse') redirect('/nurse/dashboard.php');
+    if (current_role() === 'admin') redirect('/admin/dashboard.php');
     if (current_role() === 'management') redirect('/medi/management/dashboard.php');
 }
 
